@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         wv=(WebView)findViewById(R.id.webView);
         wv.setWebViewClient(new WebViewClient());
         wv.getSettings().setJavaScriptEnabled(true);    //  啟用 JacaScript
-        wv.loadUrl("http://www.hinet.net");
+//        wv.loadUrl("http://www.hinet.net");
+        wv.loadUrl("file:///android_asset/index.html");
     }
 }
