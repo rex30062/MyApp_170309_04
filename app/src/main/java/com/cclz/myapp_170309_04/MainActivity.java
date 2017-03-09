@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {       // 按下返回不會退出程式
-        if(wv.getUrl().contains("index.html"))
-            super.onBackPressed();
+        if(wv.getUrl().contains("index.html"))  // contains 包含
+            super.onBackPressed();  // 退出程式
         else
             wv.goBack();    // 如同上一頁!
     }
