@@ -18,4 +18,12 @@ public class MainActivity extends AppCompatActivity {
 //        wv.loadUrl("http://www.hinet.net");
         wv.loadUrl("file:///android_asset/index.html");
     }
+
+    @Override
+    public void onBackPressed() {       // 按下返回不會退出程式
+        if(wv.getUrl().contains("index.html"))
+            super.onBackPressed();
+        else
+            wv.goBack();    // 如同上一頁!
+    }
 }
